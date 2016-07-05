@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:background="@color/floralwhite"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <Button
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_button"
+        android:gravity="center"
+        android:text="记一笔" />
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/detail_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/circle_button"
+            android:text="个人账单" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/detail_together"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/circle_button"
+            android:text="公共账单" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_layout"
+        android:layout_below="@id/account"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_person_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="个人周统计：" />
+
+            <TextView
+                android:id="@+id/main_person_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="个人支出：" />
+
+            <TextView
+                android:id="@+id/main_person_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="个人收入：" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_together_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="公共周统计：" />
+
+            <TextView
+                android:id="@+id/main_together_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="公共支出：" />
+
+            <TextView
+                android:id="@+id/main_together_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="公共收入：" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.andy.login.MainActivity">
+
+    <!--留做以后APP显示名称用-->
+    <TextView
+        android:id="@+id/main1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/main1"
+        android:background="@drawable/edittext"
+        android:hint="请输入账号"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/name"
+        android:background="@drawable/edittext"
+        android:hint="请输入密码"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/forgetpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:clickable="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="忘记密码"
+        android:textColor="#AFB42B" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/password"
+        android:clickable="true"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="注册账号"
+        android:textColor="#AFB42B" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_button"
+        android:text="登录"
+        android:textSize="20dp" />
+</RelativeLayout>
